@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("GUI_QUANLYTHUVIEN")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("GUI_QuanLyThuVien")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("GUI_QUANLYTHUVIEN")]
-[assembly: System.Reflection.AssemblyTitleAttribute("GUI_QUANLYTHUVIEN")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1bcd0ac60aab1a6addd79361e09419109da020a0")]
+[assembly: System.Reflection.AssemblyProductAttribute("GUI_QuanLyThuVien")]
+[assembly: System.Reflection.AssemblyTitleAttribute("GUI_QuanLyThuVien")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]

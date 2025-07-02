@@ -1,4 +1,4 @@
-﻿namespace GUI_QUANLYTHUVIEN
+namespace Nhom2_QuanLyThuVien
 {
     internal static class Program
     {
@@ -8,16 +8,10 @@
         [STAThread]
         static void Main()
         {
+            // To customize application configuration such as set high DPI settings or default font,
+            // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-
-            // Mở frmWelcome dưới dạng modal (ShowDialog)
-            using (var welcomeForm = new frmWelcome())
-            {
-                welcomeForm.ShowDialog();
-            }
-
-            // Sau khi frmWelcome đóng thì mở frmLogin
-            Application.Run(new frmLogin());
+            Application.Run(new Form1());
         }
     }
 }

@@ -9,13 +9,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Guna.UI2.WinForms" Version="2.0.4.6" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\BLL_QUANLYTHUVIEN\BLL_QUANLYTHUVIEN.csproj" />
-    <ProjectReference Include="..\DTO_QUANLYTHUVIEN\DTO_QUANLYTHUVIEN.csproj" />
-    <ProjectReference Include="..\ULTIL_QUANLYHTUVIEN\ULTIL_QUANLYHTUVIEN.csproj" />
+    <ProjectReference Include="..\BLL_QuanLyThuVien\BLL_QuanLyThuVien.csproj" />
+    <ProjectReference Include="..\DTO_QuanLyThuVien\DTO_QuanLyThuVien.csproj" />
+    <ProjectReference Include="..\UTIL_QuanLyThuVien\UTIL_QuanLyThuVien.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -699,56 +699,74 @@
           "lib/netcoreapp2.1/_._": {}
         }
       },
-      "BLL_QUANLYTHUVIEN/1.0.0": {
+      "BLL_QuanLyThuVien/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "DAL_QUANLYTHUVIEN": "1.0.0",
-          "DTO_QUANLYTHUVIEN": "1.0.0"
+          "DAL_QuanLyThuVien": "1.0.0",
+          "DTO_QuanLyThuVien": "1.0.0",
+          "Guna.UI2.WinForms": "2.0.4.6"
         },
         "compile": {
-          "bin/placeholder/BLL_QUANLYTHUVIEN.dll": {}
+          "bin/placeholder/BLL_QuanLyThuVien.dll": {}
         },
         "runtime": {
-          "bin/placeholder/BLL_QUANLYTHUVIEN.dll": {}
-        }
+          "bin/placeholder/BLL_QuanLyThuVien.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
       },
-      "DAL_QUANLYTHUVIEN/1.0.0": {
+      "DAL_QuanLyThuVien/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "DTO_QUANLYTHUVIEN": "1.0.0",
+          "DTO_QuanLyThuVien": "1.0.0",
+          "Guna.UI2.WinForms": "2.0.4.6",
           "Microsoft.Data.SqlClient": "6.0.2"
         },
         "compile": {
-          "bin/placeholder/DAL_QUANLYTHUVIEN.dll": {}
+          "bin/placeholder/DAL_QuanLyThuVien.dll": {}
         },
         "runtime": {
-          "bin/placeholder/DAL_QUANLYTHUVIEN.dll": {}
-        }
-      },
-      "DTO_QUANLYTHUVIEN/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "compile": {
-          "bin/placeholder/DTO_QUANLYTHUVIEN.dll": {}
+          "bin/placeholder/DAL_QuanLyThuVien.dll": {}
         },
-        "runtime": {
-          "bin/placeholder/DTO_QUANLYTHUVIEN.dll": {}
-        }
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
       },
-      "ULTIL_QUANLYHTUVIEN/1.0.0": {
+      "DTO_QuanLyThuVien/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "DTO_QUANLYTHUVIEN": "1.0.0"
+          "Guna.UI2.WinForms": "2.0.4.6"
         },
         "compile": {
-          "bin/placeholder/ULTIL_QUANLYHTUVIEN.dll": {}
+          "bin/placeholder/DTO_QuanLyThuVien.dll": {}
         },
         "runtime": {
-          "bin/placeholder/ULTIL_QUANLYHTUVIEN.dll": {}
-        }
+          "bin/placeholder/DTO_QuanLyThuVien.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
+      },
+      "UTIL_QuanLyThuVien/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "DTO_QuanLyThuVien": "1.0.0",
+          "Guna.UI2.WinForms": "2.0.4.6"
+        },
+        "compile": {
+          "bin/placeholder/UTIL_QuanLyThuVien.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UTIL_QuanLyThuVien.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
       }
     }
   },
@@ -1843,53 +1861,52 @@
         "version.txt"
       ]
     },
-    "BLL_QUANLYTHUVIEN/1.0.0": {
+    "BLL_QuanLyThuVien/1.0.0": {
       "type": "project",
-      "path": "../BLL_QUANLYTHUVIEN/BLL_QUANLYTHUVIEN.csproj",
-      "msbuildProject": "../BLL_QUANLYTHUVIEN/BLL_QUANLYTHUVIEN.csproj"
+      "path": "../BLL_QuanLyThuVien/BLL_QuanLyThuVien.csproj",
+      "msbuildProject": "../BLL_QuanLyThuVien/BLL_QuanLyThuVien.csproj"
     },
-    "DAL_QUANLYTHUVIEN/1.0.0": {
+    "DAL_QuanLyThuVien/1.0.0": {
       "type": "project",
-      "path": "../DAL_QUANLYTHUVIEN/DAL_QUANLYTHUVIEN.csproj",
-      "msbuildProject": "../DAL_QUANLYTHUVIEN/DAL_QUANLYTHUVIEN.csproj"
+      "path": "../DAL_QuanLyThuVien/DAL_QuanLyThuVien.csproj",
+      "msbuildProject": "../DAL_QuanLyThuVien/DAL_QuanLyThuVien.csproj"
     },
-    "DTO_QUANLYTHUVIEN/1.0.0": {
+    "DTO_QuanLyThuVien/1.0.0": {
       "type": "project",
-      "path": "../DTO_QUANLYTHUVIEN/DTO_QUANLYTHUVIEN.csproj",
-      "msbuildProject": "../DTO_QUANLYTHUVIEN/DTO_QUANLYTHUVIEN.csproj"
+      "path": "../DTO_QuanLyThuVien/DTO_QuanLyThuVien.csproj",
+      "msbuildProject": "../DTO_QuanLyThuVien/DTO_QuanLyThuVien.csproj"
     },
-    "ULTIL_QUANLYHTUVIEN/1.0.0": {
+    "UTIL_QuanLyThuVien/1.0.0": {
       "type": "project",
-      "path": "../ULTIL_QUANLYHTUVIEN/ULTIL_QUANLYHTUVIEN.csproj",
-      "msbuildProject": "../ULTIL_QUANLYHTUVIEN/ULTIL_QUANLYHTUVIEN.csproj"
+      "path": "../UTIL_QuanLyThuVien/UTIL_QuanLyThuVien.csproj",
+      "msbuildProject": "../UTIL_QuanLyThuVien/UTIL_QuanLyThuVien.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
-      "BLL_QUANLYTHUVIEN >= 1.0.0",
-      "DTO_QUANLYTHUVIEN >= 1.0.0",
-      "Guna.UI2.WinForms >= 2.0.4.6",
-      "ULTIL_QUANLYHTUVIEN >= 1.0.0"
+      "BLL_QuanLyThuVien >= 1.0.0",
+      "DTO_QuanLyThuVien >= 1.0.0",
+      "UTIL_QuanLyThuVien >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pc\\.nuget\\packages\\": {},
+    "C:\\Users\\Hoang Nam\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pc\\Downloads\\GUI_QUANLYTHUVIEN\\GUI_QUANLYTHUVIEN\\GUI_QUANLYTHUVIEN\\GUI_QUANLYTHUVIEN.csproj",
-      "projectName": "GUI_QUANLYTHUVIEN",
-      "projectPath": "C:\\Users\\pc\\Downloads\\GUI_QUANLYTHUVIEN\\GUI_QUANLYTHUVIEN\\GUI_QUANLYTHUVIEN\\GUI_QUANLYTHUVIEN.csproj",
-      "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pc\\Downloads\\GUI_QUANLYTHUVIEN\\GUI_QUANLYTHUVIEN\\GUI_QUANLYTHUVIEN\\obj\\",
+      "projectUniqueName": "D:\\DuAnTotNghiep\\QuanLyThuVien-Nhom02-SD1905\\GUI_QuanLyThuVien\\GUI_QuanLyThuVien.csproj",
+      "projectName": "GUI_QuanLyThuVien",
+      "projectPath": "D:\\DuAnTotNghiep\\QuanLyThuVien-Nhom02-SD1905\\GUI_QuanLyThuVien\\GUI_QuanLyThuVien.csproj",
+      "packagesPath": "C:\\Users\\Hoang Nam\\.nuget\\packages\\",
+      "outputPath": "D:\\DuAnTotNghiep\\QuanLyThuVien-Nhom02-SD1905\\GUI_QuanLyThuVien\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Hoang Nam\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1904,14 +1921,14 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "C:\\Users\\pc\\Downloads\\GUI_QUANLYTHUVIEN\\GUI_QUANLYTHUVIEN\\BLL_QUANLYTHUVIEN\\BLL_QUANLYTHUVIEN.csproj": {
-              "projectPath": "C:\\Users\\pc\\Downloads\\GUI_QUANLYTHUVIEN\\GUI_QUANLYTHUVIEN\\BLL_QUANLYTHUVIEN\\BLL_QUANLYTHUVIEN.csproj"
+            "D:\\DuAnTotNghiep\\QuanLyThuVien-Nhom02-SD1905\\BLL_QuanLyThuVien\\BLL_QuanLyThuVien.csproj": {
+              "projectPath": "D:\\DuAnTotNghiep\\QuanLyThuVien-Nhom02-SD1905\\BLL_QuanLyThuVien\\BLL_QuanLyThuVien.csproj"
             },
-            "C:\\Users\\pc\\Downloads\\GUI_QUANLYTHUVIEN\\GUI_QUANLYTHUVIEN\\DTO_QUANLYTHUVIEN\\DTO_QUANLYTHUVIEN.csproj": {
-              "projectPath": "C:\\Users\\pc\\Downloads\\GUI_QUANLYTHUVIEN\\GUI_QUANLYTHUVIEN\\DTO_QUANLYTHUVIEN\\DTO_QUANLYTHUVIEN.csproj"
+            "D:\\DuAnTotNghiep\\QuanLyThuVien-Nhom02-SD1905\\DTO_QuanLyThuVien\\DTO_QuanLyThuVien.csproj": {
+              "projectPath": "D:\\DuAnTotNghiep\\QuanLyThuVien-Nhom02-SD1905\\DTO_QuanLyThuVien\\DTO_QuanLyThuVien.csproj"
             },
-            "C:\\Users\\pc\\Downloads\\GUI_QUANLYTHUVIEN\\GUI_QUANLYTHUVIEN\\ULTIL_QUANLYHTUVIEN\\ULTIL_QUANLYHTUVIEN.csproj": {
-              "projectPath": "C:\\Users\\pc\\Downloads\\GUI_QUANLYTHUVIEN\\GUI_QUANLYTHUVIEN\\ULTIL_QUANLYHTUVIEN\\ULTIL_QUANLYHTUVIEN.csproj"
+            "D:\\DuAnTotNghiep\\QuanLyThuVien-Nhom02-SD1905\\UTIL_QuanLyThuVien\\UTIL_QuanLyThuVien.csproj": {
+              "projectPath": "D:\\DuAnTotNghiep\\QuanLyThuVien-Nhom02-SD1905\\UTIL_QuanLyThuVien\\UTIL_QuanLyThuVien.csproj"
             }
           }
         }
@@ -1926,17 +1943,11 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0-windows7.0": {
         "targetAlias": "net8.0-windows",
-        "dependencies": {
-          "Guna.UI2.WinForms": {
-            "target": "Package",
-            "version": "[2.0.4.6, )"
-          }
-        },
         "imports": [
           "net461",
           "net462",
@@ -1956,7 +1967,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

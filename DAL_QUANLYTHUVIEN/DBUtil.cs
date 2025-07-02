@@ -5,13 +5,16 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.Data.SqlClient;
+using System.Data;
+using Microsoft.Data.SqlClient;   // namespace mới
 
-namespace DAL_QUANLYTHUVIEN
+
+
+namespace DAL_QuanLyThuVien
 {
     public class DBUtil
     {
-        public static string connString = @"Data Source=LAPTOP\SQLEXPRESS;Initial Catalog=Xuong_QuanLyThuVien;Integrated Security=True;Encrypt=False";
+        public static string connString = @"Data Source=HAHAHA\SQLEXPRESS;Initial Catalog=Xuong_QuanLyThuVien;Integrated Security=True;Trust Server Certificate=True";
 
         public static SqlCommand GetCommand(string sql, List<Object> args, CommandType cmdType)
         {
@@ -102,22 +105,38 @@ namespace DAL_QUANLYTHUVIEN
                 throw;
             }
         }
-        public static object ExecuteScalar(string sql, List<object> args, CommandType cmdType = CommandType.Text)
+        public static T ExecuteScalar<T>(string sql, List<object> args, CommandType cmdType = CommandType.Text)
         {
             using (SqlConnection conn = new SqlConnection(connString))
+            using (SqlCommand cmd = new SqlCommand(sql, conn))
             {
-                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                cmd.CommandType = cmdType;
+                for (int i = 0; i < args.Count; i++)
                 {
-                    cmd.CommandType = cmdType;
-                    for (int i = 0; i < args.Count; i++)
-                    {
-                        cmd.Parameters.AddWithValue($"@{i}", args[i] ?? DBNull.Value);
-                    }
-
-                    conn.Open();
-                    return cmd.ExecuteScalar();
+                    cmd.Parameters.AddWithValue($"@{i}", args[i] ?? DBNull.Value);
                 }
+
+                conn.Open();
+                object result = cmd.ExecuteScalar();
+                if (result == null || result == DBNull.Value)
+                    return default(T);
+
+                return (T)Convert.ChangeType(result, typeof(T));
             }
+        }
+        public static object ExecuteScalar(string sql, List<object> parameters)
+        {
+            using SqlConnection conn = new SqlConnection(connString);
+            using SqlCommand cmd = new SqlCommand(sql, conn);
+
+            // Thêm tham số vào command
+            for (int i = 0; i < parameters.Count; i++)
+            {
+                cmd.Parameters.AddWithValue($"@{i}", parameters[i] ?? DBNull.Value);
+            }
+
+            conn.Open();
+            return cmd.ExecuteScalar();
         }
         public static DataTable GetDataTable(string sql, List<object> args, CommandType cmdType = CommandType.Text)
         {
@@ -130,7 +149,5 @@ namespace DAL_QUANLYTHUVIEN
                 return dt;
             }
         }
-
-
     }
 }
