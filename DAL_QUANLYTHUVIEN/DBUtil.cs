@@ -5,16 +5,13 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data;
-using Microsoft.Data.SqlClient;   // namespace mới
+using Microsoft.Data.SqlClient;
 
-
-
-namespace DAL_QuanLyThuVien
+namespace DAL_QUANLYTHUVIEN
 {
     public class DBUtil
     {
-        public static string connString = @"Data Source=HAHAHA\SQLEXPRESS;Initial Catalog=Xuong_QuanLyThuVien;Integrated Security=True;Trust Server Certificate=True";
+        public static string connString = @"Data Source=DESKTOP-5MEOV6J\SQLEXPRESS03;Initial Catalog=Xuong_QuanLyThuVien;Integrated Security=True;Trust Server Certificate=True";
 
         public static SqlCommand GetCommand(string sql, List<Object> args, CommandType cmdType)
         {

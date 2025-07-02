@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4dal6Vhm8bw=",
+  "dgSpecHash": "ivNQx9VaXzg=",
   "success": true,
-  "projectFilePath": "D:\\DuAnTotNghiep\\QuanLyThuVien-Nhom02-SD1905\\DTO_QuanLyThuVien\\DTO_QuanLyThuVien.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Hoang Nam\\.nuget\\packages\\guna.ui2.winforms\\2.0.4.6\\guna.ui2.winforms.2.0.4.6.nupkg.sha512",
-    "C:\\Users\\Hoang Nam\\.nuget\\packages\\system.codedom\\7.0.0\\system.codedom.7.0.0.nupkg.sha512",
-    "C:\\Users\\Hoang Nam\\.nuget\\packages\\system.management\\7.0.0\\system.management.7.0.0.nupkg.sha512"
-  ],
+  "projectFilePath": "D:\\Nhom2_QuanLyThuVien\\Nhom2_QuanLyThuVien\\DTO_QuanLyThuVien\\DTO_QuanLyThuVien.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
